@@ -87,7 +87,7 @@
 - --help
 - docker ps -> show containers
 -a: gives the all containers
-- docker start <name> -> run the existing container - not blocking the terminal -> **detached mode**
+- docker start <name> -> run the existing container - not blocking the terminal -> **detached mode** -> -a for **attahced mode**
 - docker rm
 # Attached and Detached Container
 - Detached - container runnning in background
