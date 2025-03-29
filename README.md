@@ -19,4 +19,11 @@
 - Container - we have our OS -> using OS built-in Container Support -> Docker engine Runs on it -> Container
 - We have config files here -> images shareable
 - Docker (low impact on OS, fast, sharing, re-building, Encapsulated) vs VM (biggger impact on OS, slow, higer disk usage, sharing, re-building, encapsulated whole machine)
+# Docker Engine - installed by Docker Desktop (DAEMON + CLI)
+- hosts linux requires to run docker
+- daemon - process keeps on running that ensures docker is working - heart
+- cli
+- docker hub - used to host images
+- docker compose - tools used to maintain multiple containeres
+- kubernetes - used while deploying container
 
