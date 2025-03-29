@@ -65,10 +65,18 @@
 - CMD ["node", "server.js"] -> run once the conatienr is running
 - Docker container is isoolated has its own network
 - To make it expose to the local
-- EXPOSE 80 -> only for documentation purposes not do really anything
+- EXPOSE 80 -> only for documentation purposes not do really anything (optional)
 - docker build . -> build our image
 - docker run <id>
 - docker ps -a -> shows every container
 - docker ps -> shows running containers
 - docker run -p 3000:80 <id> -> -p (publish)
+- As an additional quick side-note: For all docker commands where an ID can be used, you don't always have to copy / write out the full id.
+- You can also just use the first (few) character(s) - just enough to have a unique identifier.
+- Images are **Read Only** -> takes SNAPSHOT of source code -> SO need to build the image again if there is changes
+- Yup there is a way to simplify - later
+- Image is **closed template**
+- Images are **Layer Based** -> while building/ re-building the image -> **only instructions where something changed and all the instruction there after are reevaluated** -> once the layer changes after that every layer is re executed.   
+- **Layer Based Architecture** -> every instructions represent layers -> layers are cached -> container bassed on image add a container layer (read+write)
+- 
 
