@@ -67,7 +67,7 @@
 - To make it expose to the local
 - EXPOSE 80 -> only for documentation purposes not do really anything (optional)
 - docker build . -> build our image
-- docker run <id>
+- docker run <id> -> runs a new container based on image
 - docker ps -a -> shows every container
 - docker ps -> shows running containers
 - docker run -p 3000:80 <id> -> -p (publish)
@@ -77,6 +77,22 @@
 - Yup there is a way to simplify - later
 - Image is **closed template**
 - Images are **Layer Based** -> while building/ re-building the image -> **only instructions where something changed and all the instruction there after are reevaluated** -> once the layer changes after that every layer is re executed.   
-- **Layer Based Architecture** -> every instructions represent layers -> layers are cached -> container bassed on image add a container layer (read+write)
-- 
+- **Layer Based Architecture** -> every instructions represent layers -> layers are cached -> container bassed on image just adds a **container layer (read+write)**
+# Managing Images and Containers
+- -t
+- docker images
+- docker image inspect
+- docker rmi, docker prune
+- --name
+- --help
+- docker ps -> show containers
+-a: gives the all containers
+- docker start <name> -> run the existing container - not blocking the terminal -> **detached mode**
+- docker rm
+# Attached and Detached Container
+- Detached - container runnning in background
+- Attached - running in foreground -> means we're listening to the outputs
+- docker run -p _:_ -d <id> -> -d: for detached mode
+- docker attach <name/id> -> now we can listen to the outputs
+- docker logs -f <name/id> -> we can see the past logs related to container -> -f: follow the logs -> attached
 
