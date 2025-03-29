@@ -26,4 +26,49 @@
 - docker hub - used to host images
 - docker compose - tools used to maintain multiple containeres
 - kubernetes - used while deploying container
+# Commands
+- docker build . -> creates a docker image (set of instruction ready to run as container)
+- docker run -p 3000:3000 <id>
+# Foundation
+- Images & Containers    
+- Data & Volumes
+- Containers and Networking
+# Real Life
+- Multi-Container Projects
+- Docker Compose
+- Utility Containers
+- Deploy Docker Containers using AWS
+# Kubernetes
+- Introduction and Basics
+- Data & Volumes
+- Networking
+- Deploying a cluster
+# Images and Containers 
+- Container (Runnin unot of software - code + env)
+- Images (Templates/BP for  containers) -> Contains code and required tools/rt
+- same img can be used to create multiple containers
+- img - is shareable bp - setup code and environment
+- container - running instance of img
+- Image -> existing/ pre-built or create 
+- docker run node -> gives interactive shell where we can insert command - but by default container is isolated -> not automatically exposed to user
+- docker ps -a -> ps - processes
+- docker run -it node -> we want interactive session
+- Creation of images -> pulling base image + logic (running on top of the base image)
+- Dockerfile - setup instruction for our image
+- FROM (ALL CAPS)
+- COPY .(local host) /app(inside container)
+- WORKDIR /app (all cmds run in this subfolder)
+- RUN npm install 
+- All this here run during building the image
+- All this here are instructions to setup the image - template for container
+- container runs based on image
+- CMD ["node", "server.js"] -> run once the conatienr is running
+- Docker container is isoolated has its own network
+- To make it expose to the local
+- EXPOSE 80 -> only for documentation purposes not do really anything
+- docker build . -> build our image
+- docker run <id>
+- docker ps -a -> shows every container
+- docker ps -> shows running containers
+- docker run -p 3000:80 <id> -> -p (publish)
 
