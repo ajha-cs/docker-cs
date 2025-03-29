@@ -95,4 +95,6 @@
 - docker run -p _:_ -d <id> -> -d: for detached mode
 - docker attach <name/id> -> now we can listen to the outputs
 - docker logs -f <name/id> -> we can see the past logs related to container -> -f: follow the logs -> attached
+# Interactivev mode
+- 
 
