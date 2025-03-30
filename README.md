@@ -99,4 +99,15 @@
 - docker run -> gives attached 
 - docker run -> -i (interactive mode) -t (psuedo tty - creates such terminal)
 - docker run -it <id>
+- docker start -a -i <id> -> -a for listening output and -i for listening input
+# Deleting Images and Containers
+- docker rm <id> -> remove containers -> can't remove a running container
+- docker images
+- docker rmi <id> -> for removing images - only remove iamges if not getting used by any containers
+- docker image prune -> remove unused images
+- Cumbersome way of doing it -> simplify ??
+- Remove stopped container automatically -> --rm flag automaticallly rmoves once it exited
+# Inspecting Images
+- docker image inspect <id> -> gives imformation about created on, size, layers, os, ports, etc.
+- docker cp <src> <dest> -> allows you to copying into or from running container
 
