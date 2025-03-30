@@ -114,3 +114,17 @@
 - docker run --name <id> -> for naming the conatiner
 - images tags -> name:tag -> tag -> used for version
 - docker build -t <tag> <id> -> -t for putting up the tag
+# Sharing Images & Containers
+- everyone who has image can run container based on it
+- Two ways : 
+- 1. Share the Dockerfile -> requires build step
+- 2. Share a built image -> just run it
+# Pushing Images to Dockerhub
+- Sharing via Docker Hub - official docker images registry (free usage possible) or Private Registry
+- Possible by docker push <img_name>
+- docker pull <img_name>
+- docker tag <oldtag> <newtag>
+- since we're pushing our image using node img as base img so it pushes only the different part cuz the node img is already in docker hub
+- docker image prune -a -> to delete all docker images
+- docker pull - fetches the latest image from dhub
+- docker run - checks locally first then goes to dhub
