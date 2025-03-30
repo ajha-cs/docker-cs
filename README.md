@@ -110,4 +110,7 @@
 # Inspecting Images
 - docker image inspect <id> -> gives imformation about created on, size, layers, os, ports, etc.
 - docker cp <src> <dest> -> allows you to copying into or from running container
-
+# Naming and Tagging
+- docker run --name <id> -> for naming the conatiner
+- images tags -> name:tag -> tag -> used for version
+- docker build -t <tag> <id> -> -t for putting up the tag
